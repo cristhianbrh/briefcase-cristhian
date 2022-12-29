@@ -17,6 +17,12 @@
     text-align: center;
     align-items: center;
     overflow: hidden;
+    box-shadow: 0 0 2px 0 #000000;
+    /* cursor: pointer; */
+}
+.SkillComponentProgress-class>div:hover{
+    box-shadow: 10px 5px 3px 0 #888383;
+    transition: all 0.3s;
 }
 .SkillComponentProgress-class>div>p{
     transform: rotate(-90deg);
