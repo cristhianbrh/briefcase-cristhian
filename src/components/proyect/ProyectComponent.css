@@ -1,0 +1,97 @@
+.ProyectComponentClass
+{
+    width: 300px;
+    height: 90%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.ProyectComponentClass>img
+{
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 30px;
+    background-color: rgba(248, 240, 240, 0.9);
+    padding: 2px 10px;
+
+    border-radius: 10px 10px 0 0;
+    z-index: 0;
+}
+.ProyectComponentClass>div.conten
+{
+    border-radius: 5px;
+    /* margin-top: 5px; */
+    background-color: rgba(248, 240, 240, 0.9);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 0;
+
+    cursor: pointer;
+}
+.ProyectComponentClass>div.conten>p
+{
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    height: 5px;
+    text-align: center;
+    transform: translateY(-10px);
+}
+.ProyectComponentClass>div.conten>img
+{
+    height: 160px;
+}
+.ProyectComponentClass>div.conten>div
+{
+    margin-top: 5px;
+    flex: 1;
+    display: flex;
+    place-content: space-evenly;
+}
+.ProyectComponentClass>div.conten>div>img{
+    height: 30px;
+}
+
+.ProyectComponentClass>div.shadow{
+    cursor: pointer;
+    gap: 20px;
+
+    height: 232px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.91);
+    border-radius: 4px;
+    
+    z-index: 2;
+    
+    top: 34px;
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+div.conten:hover ~ div.shadow
+{
+    display: flex;
+}
+.ProyectComponentClass>div.shadow:hover
+{
+    display: flex;
+}
+.ProyectComponentClass>div.shadow>p{
+    color: aliceblue;
+    text-align: center;
+}
+.ProyectComponentClass>div.shadow>div{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.ProyectComponentClass>div.shadow img{
+    height: 35px;
+}
+

@@ -1,5 +1,6 @@
 import "./App.css";
 import HeaderComponent from "./components/header/HeaderComponent";
+import ProyectComponent from "./components/proyect/ProyectComponent";
 import SkillComponentProgress from "./components/skill/SkillComponentProgress";
 
 
@@ -49,10 +50,22 @@ const App = () => {
                 </div>
             </section>
             <section className="proyects">
-
+                <p>My proyects</p>
+                <div>
+                    <section>
+                        <ProyectComponent/>
+                        <ProyectComponent/>
+                        <ProyectComponent/>
+                    </section>
+                    <section>
+                        <ProyectComponent/>
+                        <ProyectComponent/>
+                        <ProyectComponent/>
+                    </section>
+                    
+                </div>
             </section>
             <section className="contact">
-
             </section>
         </>
     )

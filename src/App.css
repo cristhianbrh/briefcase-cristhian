@@ -1,32 +1,33 @@
-::-webkit-scrollbar
-{
+/* ::-webkit-scrollbar {
     display: none;
-}
-:root{
+} */
+
+:root {
     --background-basic-skill: #e42121;
     --background-medium-skill: #14c829;
     --background-advanced-skill: #2705ff;
 }
 
-#root
-{
+#root {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
-#root>section
-{
+#root::-webkit-scrollbar {
+    display: none;
+}
+
+#root>section {
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
 
     scroll-snap-align: start;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 /* Presentation */
-section.presentation
-{
+section.presentation {
     --opacity-black: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacity-black)), rgba(0, 0, 0, var(--opacity-black))), url('./sources/img/background-presentation.jpg');
     background-repeat: no-repeat;
@@ -37,62 +38,61 @@ section.presentation
     justify-content: center;
     flex-direction: column;
 }
-section.presentation>img
-{
+
+section.presentation>img {
     /* transform: translateY(-px); */
     border-radius: 50%;
     height: 180px;
 }
-section.presentation>div
-{
+
+section.presentation>div {
     /* transform: translateY(-90px); */
     text-align: center;
 }
 
-section.presentation>div>p:nth-child(1)
-{
+section.presentation>div>p:nth-child(1) {
     color: #BDFF00;
     font-size: 30px;
 }
-section.presentation>div>p:nth-child(2)
-{
+
+section.presentation>div>p:nth-child(2) {
     color: #0ADBB8;
     font-size: 30px;
 }
-section.presentation>div>p:nth-child(3)
-{
+
+section.presentation>div>p:nth-child(3) {
     color: #E86411;
     font-size: 30px;
 }
 
 /* Skills */
-section.skills
-{
+section.skills {
     /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
-section.skills>p
-{
+
+section.skills>p {
+    margin-top: 55px;
     text-align: center;
     font-size: 20px;
     letter-spacing: 2px;
 }
-section.skills>div
-{
+
+section.skills>div {
     flex: 1;
     display: flex;
     padding: 0 12px;
 }
-section.skills>div>.legend
-{
+
+section.skills>div>.legend {
     display: flex;
     flex-direction: column;
     height: 190px;
     padding: 0 13px;
 }
-section.skills>div>.legend>p:nth-child(1)::before
-{
+
+section.skills>div>.legend>p:nth-child(1)::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -101,8 +101,8 @@ section.skills>div>.legend>p:nth-child(1)::before
 
     background-color: var(--background-basic-skill);
 }
-section.skills>div>.legend>p:nth-child(2)::before
-{
+
+section.skills>div>.legend>p:nth-child(2)::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -111,8 +111,8 @@ section.skills>div>.legend>p:nth-child(2)::before
 
     background-color: var(--background-medium-skill);
 }
-section.skills>div>.legend>p:nth-child(3)::before
-{
+
+section.skills>div>.legend>p:nth-child(3)::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -122,18 +122,51 @@ section.skills>div>.legend>p:nth-child(3)::before
     background-color: var(--background-advanced-skill);
 }
 
-section.skills>div>.skills-list-progress
-{
+section.skills>div>.skills-list-progress {
     flex: 1;
     display: flex;
     gap: 13px;
     align-items: flex-end;
     margin-bottom: 90px;
 
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 /* proyects */
-section.proyects{
-    
+section.proyects {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section.proyects>p {
+    margin-top: 55px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+section.proyects>div{
+    background-color: rgba(6, 0, 29, 0.8);
+    height: 50%;
+    border-radius: 10px;
+    overflow-x: auto;
+    padding-top: 30px;
+    padding-left: 13px;
+    display: flex;
+
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    gap: 40px;
+}
+section.proyects>div>section{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    scroll-snap-align: start;
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
