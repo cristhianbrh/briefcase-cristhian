@@ -4,6 +4,19 @@ import SkillComponentProgress from "./components/skill/SkillComponentProgress";
 
 
 const App = () => {
+    const skillsList = [
+        ["C#", "c-char-Icon", 2],
+        ["CSS3", "css3-Icon", 2],
+        ["GIT", "git-Icon", 1],
+        ["HTML", "html-Icon", 2],
+        ["JAVA", "java-Icon", 0],
+        ["JavaScript", "js-Icon", 2],
+        ["Node", "nodejs-Icon", 2],
+        ["Python", "python-Icon", 1],
+        ["React", "react-Icon", 2],
+        ["SQL", "sql-Icon", 2]
+    ]
+
     return (
         <>
             <HeaderComponent />
@@ -20,47 +33,13 @@ const App = () => {
                 <p>My skills</p>
                 <div>
                     <div className="skills-list-progress">
-                        <SkillComponentProgress
-                            nameLen="C#"
-                            nameImg="c-char-Icon"
-                            level={2} />
-                        <SkillComponentProgress
-                            nameLen="CSS3"
-                            nameImg="css3-Icon"
-                            level={2} />
-                        <SkillComponentProgress
-                            nameLen="Git"
-                            nameImg="git-Icon"
-                            level={1} />
-                        <SkillComponentProgress
-                            nameLen="HTML5"
-                            nameImg="html-Icon"
-                            level={2} />
-                        <SkillComponentProgress
-                            nameLen="Java"
-                            nameImg="java-Icon"
-                            level={0} />
-                        <SkillComponentProgress
-                            nameLen="JavasCript"
-                            nameImg="js-Icon"
-                            level={2} />
-                        <SkillComponentProgress
-                            nameLen="Node"
-                            nameImg="nodejs-Icon"
-                            level={2} />
-                        <SkillComponentProgress
-                            nameLen="Python"
-                            nameImg="python-Icon"
-                            level={1} />
-                        <SkillComponentProgress
-                            nameLen="React"
-                            nameImg="react-Icon"
-                            level={2} />
-                        <SkillComponentProgress
-                            nameLen="Sql"
-                            nameImg="sql-Icon"
-                            level={2} />
-
+                        {
+                            skillsList.map((skillComp)=>
+                            <SkillComponentProgress
+                                nameLen={skillComp[0]}
+                                nameImg={skillComp[1]}
+                                level={skillComp[2]} />)
+                        }
                     </div>
                     <div className="legend">
                         <p>Basic</p>

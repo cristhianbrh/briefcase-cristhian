@@ -129,4 +129,11 @@ section.skills>div>.skills-list-progress
     gap: 13px;
     align-items: flex-end;
     margin-bottom: 90px;
+
+    overflow-x: scroll;
+}
+
+/* proyects */
+section.proyects{
+    
 }
