@@ -34,14 +34,14 @@ const App = () => {
             <section className="skills">
                 <p>My skills</p>
                 <div>
-                    <div className="skills-list-progress"> 
+                    <div className="skills-list-progress">
                         {
-                            skillsList.map((skillComp, num)=>
-                            <SkillComponentProgress
-                                key={"skill" + num + "Key"}
-                                nameLen={skillComp[0]}
-                                nameImg={skillComp[1]}
-                                level={skillComp[2]} />)
+                            skillsList.map((skillComp, num) =>
+                                <SkillComponentProgress
+                                    key={"skill" + num + "Key"}
+                                    nameLen={skillComp[0]}
+                                    nameImg={skillComp[1]}
+                                    level={skillComp[2]} />)
                         }
                     </div>
                     <div className="legend">
@@ -55,16 +55,16 @@ const App = () => {
                 <p>My proyects</p>
                 <div>
                     <section>
-                        <ProyectComponent/>
-                        <ProyectComponent/>
-                        <ProyectComponent/>
+                        <ProyectComponent />
+                        <ProyectComponent />
+                        <ProyectComponent />
                     </section>
                     <section>
-                        <ProyectComponent/>
-                        <ProyectComponent/>
-                        <ProyectComponent/>
+                        <ProyectComponent />
+                        <ProyectComponent />
+                        <ProyectComponent />
                     </section>
-                    
+
                 </div>
             </section>
             <section className="contact">
@@ -87,18 +87,18 @@ const App = () => {
                             typeInput="email" />
                         <InputComponent
                             textSpan="Telephone"
-                            typeInput="text" 
-                            inputPattern="[0-9]{3,}"/>
-                        <InputComponent
-                            textSpan="Message"
-                            typeInput="text" />
-                        <button></button>
+                            typeInput="text"
+                            inputPattern="[0-9]{3,}" />
+                        <textarea name="ll" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                        <button>Enviar</button>
                     </form>
                 </div>
-                <p></p>
-                <div className="socialMedia">
+                {/* <div className="socialMedia">
 
-                </div>
+                </div> */}
+                <footer>
+                    
+                </footer>
             </section>
         </>
     )

@@ -20,7 +20,8 @@
     transition: all 0.5s;
 }
 input.InputComponentClass_input:focus ~ span.InputComponentClass_span,
-input.InputComponentClass_input:valid ~ span.InputComponentClass_span
+input.InputComponentClass_input:valid ~ span.InputComponentClass_span,
+span.InputTextMin
 {
     left: 10px;
     top: 0px;
@@ -29,5 +30,6 @@ input.InputComponentClass_input:valid ~ span.InputComponentClass_span
 }
 input.InputComponentClass_input:invalid
 {
-    border: 2px solid red;
+    border: 3px solid red;
+    border-radius: 3px;
 }
