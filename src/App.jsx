@@ -1,5 +1,6 @@
 import "./App.css";
 import HeaderComponent from "./components/header/HeaderComponent";
+import InputComponent from "./components/input/InputComponent";
 import ProyectComponent from "./components/proyect/ProyectComponent";
 import SkillComponentProgress from "./components/skill/SkillComponentProgress";
 
@@ -33,10 +34,11 @@ const App = () => {
             <section className="skills">
                 <p>My skills</p>
                 <div>
-                    <div className="skills-list-progress">
+                    <div className="skills-list-progress"> 
                         {
-                            skillsList.map((skillComp)=>
+                            skillsList.map((skillComp, num)=>
                             <SkillComponentProgress
+                                key={"skill" + num + "Key"}
                                 nameLen={skillComp[0]}
                                 nameImg={skillComp[1]}
                                 level={skillComp[2]} />)
@@ -66,6 +68,37 @@ const App = () => {
                 </div>
             </section>
             <section className="contact">
+                <div className="sendMessage">
+                    <p>Contact me</p>
+                    <form>
+                        {/* <input type="text" placeholder="FullName" />
+                        <input type="text" placeholder="BussineName" />
+                        <input type="email" placeholder="Email" />
+                        <input type="tel" placeholder="Telephone" />
+                        <input type="text" placeholder="Message" /> */}
+                        <InputComponent
+                            textSpan="FullName"
+                            typeInput="text" />
+                        <InputComponent
+                            textSpan="BussineName"
+                            typeInput="text" />
+                        <InputComponent
+                            textSpan="Email"
+                            typeInput="email" />
+                        <InputComponent
+                            textSpan="Telephone"
+                            typeInput="text" 
+                            inputPattern="[0-9]{3,}"/>
+                        <InputComponent
+                            textSpan="Message"
+                            typeInput="text" />
+                        <button></button>
+                    </form>
+                </div>
+                <p></p>
+                <div className="socialMedia">
+
+                </div>
             </section>
         </>
     )
