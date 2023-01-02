@@ -18,6 +18,8 @@ const App = () => {
         ["React", "react-Icon", 2],
         ["SQL", "sql-Icon", 2]
     ]
+    const socialMedia_youtube = require("./sources/img/socialMedia/youtube-Icon.png");
+    const socialMedia_gmail = require("./sources/img/socialMedia/gmail-Icon.png");
 
     return (
         <>
@@ -96,10 +98,20 @@ const App = () => {
                 {/* <div className="socialMedia">
 
                 </div> */}
-                <footer>
-                    
-                </footer>
             </section>
+            <footer>
+                <div>
+                    <p>Redes sociales:</p>
+                    <img src={socialMedia_youtube} alt="YouTube" />
+                </div>
+                <div>
+                    <p>@cristhianBautista</p>
+                </div>
+                <div>
+                    <p>Contáctame:</p>
+                    <img src={socialMedia_gmail} alt="Gmail" />
+                </div>
+            </footer>
         </>
     )
 }
