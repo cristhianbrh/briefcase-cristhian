@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import HeaderComponent from "./components/header/HeaderComponent";
 import InputComponent from "./components/input/InputComponent";
@@ -5,7 +6,10 @@ import ProyectComponent from "./components/proyect/ProyectComponent";
 import SkillComponentProgress from "./components/skill/SkillComponentProgress";
 
 
+
 const App = () => {
+    const rootId = document.getElementById("root");
+    const [sections, setSections] = new useState(["Home", "About me", "Skills", "Contact"]);
     const skillsList = [
         ["C#", "c-char-Icon", 2],
         ["CSS3", "css3-Icon", 2],
@@ -21,11 +25,38 @@ const App = () => {
     const socialMedia_youtube = require("./sources/img/socialMedia/youtube-Icon.png");
     const socialMedia_gmail = require("./sources/img/socialMedia/gmail-Icon.png");
 
+    const [sectionCurrent, setSectionCurrent] = new useState(0);
+    const locationSection=(numSectionGo)=>{
+        const setTop = document.getElementById(`appSection${numSectionGo}`);
+        setTop.scrollIntoView({
+            top: "start",
+            behavior: "smooth"
+        })
+        setSectionCurrent(numSectionGo);
+    }
+    
+    // useEffect(()=>{
+    //     const sectionId = document.getElementById("appSection"+1);
+    //     observerSection.observe(sectionId);
+    // },[sections]);
+    // const observerSection = new IntersectionObserver((entries, observer)=>{
+    //     entries.forEach((entry)=>{
+    //         if(entry.isIntersecting){
+    //             console.log("observer2");
+    //         }
+    //     });
+    // }, {
+    //     root: null,
+    //     rootMargin: "0 0",
+    //     threshold: 0.2
+    // })
+
+
     return (
         <>
-            <HeaderComponent />
+            <HeaderComponent optionAct={sectionCurrent} sections={sections} locationSection={locationSection}/>
 
-            <section className="presentation">
+            <section className="presentation" id="appSection0">
                 <img src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.18169-1/20914476_109726846421187_2369818204369290765_n.jpg?stp=cp0_dst-jpg_e15_p120x120_q65&_nc_cat=108&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=yI7VEr8B-TgAX-72Brd&_nc_ht=scontent.ftru2-3.fna&oh=00_AfCRyOyF93Pcc17OZrlSKBcuNID9NrOOZ2xAAqdHMIY88Q&oe=63D51224" alt="No image" />
                 <div>
                     <p>Hola</p>
@@ -33,7 +64,7 @@ const App = () => {
                     <p>Soy desarrollador web fullstack</p>
                 </div>
             </section>
-            <section className="skills">
+            <section className="skills"id="appSection1">
                 <p>My skills</p>
                 <div>
                     <div className="skills-list-progress">
@@ -53,7 +84,7 @@ const App = () => {
                     </div>
                 </div>
             </section>
-            <section className="proyects">
+            <section className="proyects" id="appSection2">
                 <p>My proyects</p>
                 <div>
                     <section>
@@ -69,7 +100,7 @@ const App = () => {
 
                 </div>
             </section>
-            <section className="contact">
+            <section className="contact" id="appSection3">
                 <div className="sendMessage">
                     <p>Contact me</p>
                     <form>
