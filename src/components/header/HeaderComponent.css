@@ -9,10 +9,14 @@ li
     font-size: 20;
     font-weight: bold;
     position: fixed;
-
+    
     height: 50px;
     width: 100%;
     z-index: 3;
+}
+
+.HeaderComponent-class>nav>img {
+    height: 50px;
 }
 
 .HeaderComponent-class>nav {

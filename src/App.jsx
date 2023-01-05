@@ -10,7 +10,8 @@ import useVisible from "./hooks/useVisible";
 
 const App = () => {
     const rootId = document.getElementById("root");
-    const [sections, setSections] = new useState(["Home", "About me", "Skills", "Contact"]);
+    // const [sections, setSections] = new useState(["Home", "About me", "Skills", "Contact"]);
+    const [sections, setSections] = new useState(["Home", "Skills", "Proyects", "Contact"]);
     const skillsList = [
         ["C#", "c-char-Icon", 2],
         ["CSS3", "css3-Icon", 2],

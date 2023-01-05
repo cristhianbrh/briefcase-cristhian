@@ -1,6 +1,9 @@
 import "./HeaderComponent.css";
+import myIcon from './../../sources/img/logo/logo.ico'
+
 const HeaderComponent = ({optionAct, locationSection, sections}) => {
     
+
     const styleOption = [{
         color: "#aba6a6",
         fontWeight: 500,
@@ -26,7 +29,7 @@ const HeaderComponent = ({optionAct, locationSection, sections}) => {
         <header className="HeaderComponent-class">
             <nav>
 
-                <img src="" alt="Lol" />
+                <img src={myIcon} alt="Lol" />
 
                 <div>
                     {sections.map((section, num) => {
