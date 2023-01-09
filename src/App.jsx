@@ -1,14 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import HeaderComponent from "./components/header/HeaderComponent";
-import InputComponent from "./components/input/InputComponent";
-import ProyectComponent from "./components/proyect/ProyectComponent";
-import SkillComponentProgress from "./components/skill/SkillComponentProgress";
-import { InView, observe, useInView } from "react-intersection-observer";
 import useVisible from "./hooks/useVisible";
 import PresentationSection from "./components/sections/presentation/PresentationSection";
 import AboutMeSection from "./components/sections/aboutMe/AboutMeSection";
-import SkillsSection from "./components/sections/skillsv1/SkillsSection";
+import SkillsSection from "./components/sections/skillsv2/SkillsSection";
 import ProyectsSection from "./components/sections/proyects/ProyectsSection";
 import ContactSection from "./components/sections/contact/ContactSection";
 import FooterComponent from "./components/footer/FooterComponent";
