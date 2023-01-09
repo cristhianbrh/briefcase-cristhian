@@ -1,5 +1,4 @@
 import "./SkillsSection.css";
-import SkillComponentProgress from "../../skill/SkillComponentProgress";
 import { useEffect, useState } from "react";
 
 const SkillsSection = ({ visorRef }) => {

@@ -4,10 +4,10 @@ import HeaderComponent from "./components/header/HeaderComponent";
 import useVisible from "./hooks/useVisible";
 import PresentationSection from "./components/sections/presentation/PresentationSection";
 import AboutMeSection from "./components/sections/aboutMe/AboutMeSection";
-import SkillsSection from "./components/sections/skillsv2/SkillsSection";
 import ProyectsSection from "./components/sections/proyects/ProyectsSection";
 import ContactSection from "./components/sections/contact/ContactSection";
 import FooterComponent from "./components/footer/FooterComponent";
+import SkillsSection from "./components/sections/skills/SkillsSection";
 
 
 const App = () => {
