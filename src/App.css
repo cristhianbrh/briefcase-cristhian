@@ -12,6 +12,7 @@
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    background-image: url(./sources/img/skills/fontRepeat.png);
 }
 #root::-webkit-scrollbar {
     display: none;

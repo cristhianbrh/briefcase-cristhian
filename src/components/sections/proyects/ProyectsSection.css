@@ -12,10 +12,11 @@ section.proyects>p {
     text-align: center;
     font-size: 20px;
     letter-spacing: 2px;
+    color: aliceblue;
 }
 
 section.proyects>div{
-    background-color: rgba(6, 0, 29, 0.8);
+    background-color: #38334A;
     height: 50%;
     border-radius: 10px;
     overflow-x: auto;

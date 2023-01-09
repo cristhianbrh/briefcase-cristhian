@@ -34,6 +34,7 @@ section.aboutMe>div.aboutMe_imgs>div {
 section.aboutMe>div.aboutMe_imgs>div>svg {
     width: 45px;
     cursor: pointer;
+    fill: #84eedc;
 }
 
 section.aboutMe>div.aboutMe_imgs>div>svg:hover {
