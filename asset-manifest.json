@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/briefcase-cristhian/static/css/main.151d9802.css",
+    "main.js": "/briefcase-cristhian/static/js/main.932792af.js",
+    "static/media/background-presentation.jpg": "/briefcase-cristhian/static/media/background-presentation.d076d36af0a509cc3435.jpg",
+    "static/media/logo.ico": "/briefcase-cristhian/static/media/logo.2a3999b64cb60b62d175.ico",
+    "static/media/sql-Icon.png": "/briefcase-cristhian/static/media/sql-Icon.b0d26cc7533125d3b190.png",
+    "static/media/react-Icon.png": "/briefcase-cristhian/static/media/react-Icon.f6b89d232c9bc9f828e5.png",
+    "static/media/nodejs-Icon.png": "/briefcase-cristhian/static/media/nodejs-Icon.7241975d55ed384ec5a9.png",
+    "static/media/css3-Icon.png": "/briefcase-cristhian/static/media/css3-Icon.090458fdf7e2fbf2271d.png",
+    "static/media/java-Icon.png": "/briefcase-cristhian/static/media/java-Icon.d24b122dd1f6b7d9c0bf.png",
+    "static/media/python-Icon.png": "/briefcase-cristhian/static/media/python-Icon.ce0857834e7aec373708.png",
+    "static/media/c-char-Icon.png": "/briefcase-cristhian/static/media/c-char-Icon.29a5e2f5a4345a5e7d60.png",
+    "static/media/youtube-Icon.png": "/briefcase-cristhian/static/media/youtube-Icon.5ba753e7a18aa44432da.png",
+    "static/media/gmail-Icon.png": "/briefcase-cristhian/static/media/gmail-Icon.5a272c88dc27cdade3ed.png",
+    "static/media/js-Icon.png": "/briefcase-cristhian/static/media/js-Icon.1ad63c6d86c6a90e4e1b.png",
+    "static/media/git-Icon.png": "/briefcase-cristhian/static/media/git-Icon.5b8e5cbb82050a14b364.png",
+    "static/media/html-Icon.png": "/briefcase-cristhian/static/media/html-Icon.2e0cca4810aa7739127c.png",
+    "index.html": "/briefcase-cristhian/index.html",
+    "main.151d9802.css.map": "/briefcase-cristhian/static/css/main.151d9802.css.map",
+    "main.932792af.js.map": "/briefcase-cristhian/static/js/main.932792af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.151d9802.css",
+    "static/js/main.932792af.js"
+  ]
+}
