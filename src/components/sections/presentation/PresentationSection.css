@@ -18,9 +18,17 @@ section.presentation>img {
 
 section.presentation>div {
     /* transform: translateY(-90px); */
-    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 100%;
 }
-
+section.presentation>div>div>p {
+    /* transform: translateY(-90px); */
+    width: 98%;
+    text-align: center;
+    font-size: clamp(1.7rem, 2.4rem, 4.5rem);
+}
+/* 
 section.presentation>div>p:nth-child(1) {
     color: #BDFF00;
     font-size: 30px;
@@ -34,4 +42,4 @@ section.presentation>div>p:nth-child(2) {
 section.presentation>div>p:nth-child(3) {
     color: #E86411;
     font-size: 30px;
-}
+} */
