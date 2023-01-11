@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/briefcase-cristhian/static/css/main.151d9802.css",
-    "main.js": "/briefcase-cristhian/static/js/main.932792af.js",
+    "main.css": "/briefcase-cristhian/static/css/main.0e8f11d9.css",
+    "main.js": "/briefcase-cristhian/static/js/main.c609c796.js",
+    "static/media/PortfolioT.png": "/briefcase-cristhian/static/media/PortfolioT.a9cd4a231162c08f7fe7.png",
+    "static/media/PortfolioM.png": "/briefcase-cristhian/static/media/PortfolioM.7a637653ac7913ac7469.png",
+    "static/media/PortfolioD.png": "/briefcase-cristhian/static/media/PortfolioD.fdc3787fa6bbbd3e70d0.png",
     "static/media/background-presentation.jpg": "/briefcase-cristhian/static/media/background-presentation.d076d36af0a509cc3435.jpg",
+    "static/media/PortfolioLogo.png": "/briefcase-cristhian/static/media/PortfolioLogo.9631a00c6c436a0f12af.png",
     "static/media/logo.ico": "/briefcase-cristhian/static/media/logo.2a3999b64cb60b62d175.ico",
     "static/media/sql-Icon.png": "/briefcase-cristhian/static/media/sql-Icon.b0d26cc7533125d3b190.png",
     "static/media/react-Icon.png": "/briefcase-cristhian/static/media/react-Icon.f6b89d232c9bc9f828e5.png",
@@ -17,11 +21,11 @@
     "static/media/git-Icon.png": "/briefcase-cristhian/static/media/git-Icon.5b8e5cbb82050a14b364.png",
     "static/media/html-Icon.png": "/briefcase-cristhian/static/media/html-Icon.2e0cca4810aa7739127c.png",
     "index.html": "/briefcase-cristhian/index.html",
-    "main.151d9802.css.map": "/briefcase-cristhian/static/css/main.151d9802.css.map",
-    "main.932792af.js.map": "/briefcase-cristhian/static/js/main.932792af.js.map"
+    "main.0e8f11d9.css.map": "/briefcase-cristhian/static/css/main.0e8f11d9.css.map",
+    "main.c609c796.js.map": "/briefcase-cristhian/static/js/main.c609c796.js.map"
   },
   "entrypoints": [
-    "static/css/main.151d9802.css",
-    "static/js/main.932792af.js"
+    "static/css/main.0e8f11d9.css",
+    "static/js/main.c609c796.js"
   ]
 }
