@@ -6,8 +6,8 @@ const ProyectComponent = ({proyect}) => {
     return (
         <div className="ProyectComponentClass">
             <div className="proyectsRedirectionsProyect">
-                <a href={proyect.Repository} target="_blank"><p>Website</p></a>
-                <a href={proyect.Website} target="_blank"><p>Repository</p></a>
+                <a href={proyect.Website} target="_blank"><p>Website</p></a>
+                <a href={proyect.Repository} target="_blank"><p>Repository</p></a>
             </div>
             <img  src={display("./"+proyect.Icon.NameImg+proyect.Icon.Extension)} />
             <p className="proyectsTitleProyect">{proyect.Name}</p>
