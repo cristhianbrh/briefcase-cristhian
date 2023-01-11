@@ -14,7 +14,6 @@ const useVisible = ({ visorRef, setSectionCurrent }) => {
             if (entry.isIntersecting) {
                 const idSection = visorRef.current.id;
                 setSectionCurrent(parseInt(idSection[idSection.length-1]));
-                console.log("he dado");
             }
         }
         const options = {

@@ -6,7 +6,7 @@ const ProyectsSection = ({visorRef}) => {
         <section className="proyects" id="appSection3" ref={visorRef}>
             <p>My proyects</p>
             <div>
-                <section>
+                <section> 
                     <ProyectComponent />
                     <ProyectComponent />
                     <ProyectComponent />

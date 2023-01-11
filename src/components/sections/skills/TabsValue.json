@@ -1,5 +1,5 @@
 {
-    "RuteGlobal": "./../../../sources/img/skills",
+    "RouteGlobal": "./../../../sources/img/skills",
     "Tabs": [
         {
             "Name": "FrontEnd",
