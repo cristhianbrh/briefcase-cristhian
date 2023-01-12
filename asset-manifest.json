@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/briefcase-cristhian/static/css/main.0e8f11d9.css",
-    "main.js": "/briefcase-cristhian/static/js/main.c609c796.js",
+    "main.css": "/briefcase-cristhian/static/css/main.38fb08d7.css",
+    "main.js": "/briefcase-cristhian/static/js/main.07249471.js",
     "static/media/PortfolioT.png": "/briefcase-cristhian/static/media/PortfolioT.a9cd4a231162c08f7fe7.png",
     "static/media/PortfolioM.png": "/briefcase-cristhian/static/media/PortfolioM.7a637653ac7913ac7469.png",
     "static/media/PortfolioD.png": "/briefcase-cristhian/static/media/PortfolioD.fdc3787fa6bbbd3e70d0.png",
@@ -21,11 +21,11 @@
     "static/media/git-Icon.png": "/briefcase-cristhian/static/media/git-Icon.5b8e5cbb82050a14b364.png",
     "static/media/html-Icon.png": "/briefcase-cristhian/static/media/html-Icon.2e0cca4810aa7739127c.png",
     "index.html": "/briefcase-cristhian/index.html",
-    "main.0e8f11d9.css.map": "/briefcase-cristhian/static/css/main.0e8f11d9.css.map",
-    "main.c609c796.js.map": "/briefcase-cristhian/static/js/main.c609c796.js.map"
+    "main.38fb08d7.css.map": "/briefcase-cristhian/static/css/main.38fb08d7.css.map",
+    "main.07249471.js.map": "/briefcase-cristhian/static/js/main.07249471.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e8f11d9.css",
-    "static/js/main.c609c796.js"
+    "static/css/main.38fb08d7.css",
+    "static/js/main.07249471.js"
   ]
 }
