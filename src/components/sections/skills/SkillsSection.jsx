@@ -1,3 +1,4 @@
+import SkillImageComponent from "../../skillImage/SkillImageComponent";
 import "./SkillsSection.css";
 import { useEffect, useState } from "react";
 
@@ -34,9 +35,10 @@ const SkillsSection = ({ visorRef }) => {
                 <div className="contentSkills">
                     <p>{selectionSkill.Text}</p>
                     <div>
-                        {selectionSkill.Skills.map((skill)=>{
+                        {selectionSkill.Skills.map((skill, index)=>{
                             //  const strrr = (jsonTabs.RuteGlobal + skill.NameImg + skill.Extension).toString();
-                            return <img src={skillsPath(`./${skill.NameImg + skill.Extension}`)} alt={"aa"} />
+                            // return <img src={skillsPath(`./${skill.NameImg + skill.Extension}`)} alt={"aa"} />
+                            return <SkillImageComponent img={skillsPath(`./${skill.NameImg + skill.Extension}`)} text={skill.Name}/>
                         })}
                     </div>
                 </div>

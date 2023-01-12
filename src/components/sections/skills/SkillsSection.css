@@ -71,7 +71,7 @@ section.skills>div>.contentSkills>div
     justify-content: center;
     text-align: center;
 } 
-section.skills>div>.contentSkills>div>img
+section.skills>div>.contentSkills>div>div>img
 {
     height: 50px;
 } 

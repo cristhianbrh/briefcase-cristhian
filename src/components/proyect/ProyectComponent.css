@@ -65,8 +65,8 @@ div.ProyectComponentClass>div.imagesProyectsDisplay>img:nth-child(3) {
 div.ProyectComponentClass>p.proyectsDescriptionProyect {
     color: rgb(229, 236, 242);
     text-align: justify;
-    margin: 5px 15px 10px 15px;
-    font-size: 15px;
+    margin: 5px 15px 15px 15px;
+    font-size: 18px;
 }
 div.ProyectComponentClass>div.proyectsTecProyect {
     display: flex;
@@ -74,6 +74,6 @@ div.ProyectComponentClass>div.proyectsTecProyect {
     gap: 15px;
     margin-bottom: 5px;
 }
-div.ProyectComponentClass>div.proyectsTecProyect>img {
+div.ProyectComponentClass>div.proyectsTecProyect>div>img {
     height: 50px;
 }
