@@ -1,5 +1,4 @@
-li
-{
+li {
     list-style: none;
 }
 
@@ -9,14 +8,21 @@ li
     font-size: 20;
     font-weight: bold;
     position: fixed;
-    
+
     height: 50px;
     width: 100%;
     z-index: 3;
+    
 }
 
 .HeaderComponent-class>nav>img {
     height: 50px;
+}
+
+.HeaderComponent-class>nav>svg {
+    display: none;
+    width: 35px;
+    height: 35px;
 }
 
 .HeaderComponent-class>nav {
@@ -27,33 +33,67 @@ li
 
     padding-left: 12px;
     padding-right: 12px;
+    position: relative;
 }
+
 .HeaderComponent-class>nav>* {
     display: inline-block;
 }
-.HeaderComponent-class>nav>div
-{
+
+.HeaderComponent-class>nav>div {
     height: 90%;
     width: auto;
     display: flex;
     gap: 12px;
     /* margin-right: 12px; */
 }
-.HeaderComponent-class>nav>div>*
-{
+
+.HeaderComponent-class>nav>div>* {
     height: 100%;
     display: grid;
     text-align: center;
     align-content: center;
-    
+
     padding-left: 12px;
     padding-right: 12px;
 }
-.HeaderComponent-class>nav>div>a
-{
+
+.HeaderComponent-class>nav>div>a {
     cursor: pointer;
 }
-.HeaderComponent-class>nav>div>a:hover
-{
+
+.HeaderComponent-class>nav>div>a:hover {
     text-shadow: 0 0 6px #FFFFFF;
+}
+
+@media screen and (max-width: 716px) {
+    .HeaderComponent-class>nav>div {
+        /* display: flex; */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 52px;
+        background: #000000;
+        height: fit-content;
+        padding: 12px;
+        font-size: 20px;
+    }
+    .HeaderComponent-class>nav>div>a:hover {
+        text-shadow: none;
+    }
+
+    .HeaderComponent-class>nav>div>span {
+        display: none;
+    }
+
+    .HeaderComponent-class>nav>svg {
+        display: block;
+    }
+    .navDivs__active{
+        display: block !important;
+        right: 5px !important;
+    }
+
+
 }
